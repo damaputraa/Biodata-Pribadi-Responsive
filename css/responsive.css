@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Untuk membuat perpindahan antar id menjadi smooth ke tika di klik */
+html {
+    scroll-behavior: smooth;
+}
+
+/* menggunakan jenis font Roboto untuk tampilan body */
+body {
+    font-family: "Roboto", "Lucida Grande", "Segoe Ui";
+}
+
+/* class container adalah tempat asebuah kontainer di buat */
+.container {
+    overflow: auto;
+}
+
+/* Berisi css pengaturan Navigasi / Header */
+.container .nav {
+    width: 100%;
+    text-align: center;
+    background-color: #2E86C1;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* mengatur tampilan logo MRS */
+.container .nav img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+/* Class aside adalah untuk tampilan sebelah kiri layar  */
+.aside {
+    width: 20%;
+    background-color: blueviolet;
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+    margin-bottom: 6px;
+}
+
+.aside h4 {
+    margin: 10px;
+    text-align: center;
+    border-bottom: double white;
+    color: white;
+}
+
+.aside a {
+    list-style: none;
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    justify-content: center;
+    padding: 0.4rem;
+}
+
+/* hover untuk memberi warna saat kursor di sorot */
+.aside a:hover,
+.active {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+
+/* Class Section adalah kelas utama yang digunakan sebagai tempat menampilkan tabel*/
+.section {
+    float: right;
+    width: 80%;
+    padding: 0 20px;
+}
+
+/* CSS untuk tabel heading */
+.section .header1 {
+    align-items: center;
+    background-color: #7D3C98;
+    color: white;
+}
+
+.section .header2 {
+    align-items: center;
+    background-color: #17A589;
+    color: white;
+}
+
+.section .header3 {
+    align-items: center;
+    background-color: #2E86C1;
+    color: white;
+}
+
+/* untuk membuat model border yang spesifik pada table */
+#rani,
+#dama,
+#sopi {
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+/* class footer sebagai tempat berakhir nya sebuah website paling bawah */
+.footer {
+    margin-top: 10px;
+    background-color: #2E86C1;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Untuk tampilan responsive pada section*/
+@media only screen and (max-width:620px) {
+    .section {
+        width: 100%;
+    }
+}
+
+/* Untuk tampilan responsive untuk sidebar kiri */
+@media only screen and (max-width:620px) {
+
+    .aside,
+    .aside ul li {
+        width: 100%;
+        display: flex;
+        float: none;
+        padding: 0;
+    }
+}
